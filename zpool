@@ -1,0 +1,9 @@
+Refer: https://docs.oracle.com/cd/E19253-01/819-5461/gaynp/index.html
+
+REMOVE:
+zpool remove <pool-name> <device> # note, no need to give details like mirror, cache etc.
+example: zpool remove gitlab sdi
+
+ADD
+zpool add <pool-name> <sub-classification> <device> # sub-classification would be mirror, cache etc, etc.
+example: zpool add gitlab mirror sdi
